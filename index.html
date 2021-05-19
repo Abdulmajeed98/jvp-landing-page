@@ -10,23 +10,27 @@
       integrity="sha384-SZXxX4whJ79/gErwcOYf+zWLeJdY/qpuqC4cAa9rOGUstPomtqpuNWT9wdPEn2fk"
       crossorigin="anonymous"
     />
+    <link rel="stylesheet" href="./styles/tailwind.css" />
     <link rel="stylesheet" href="./styles/style.css" />
     <title>Dozar</title>
   </head>
   <body>
     <!-- header section -->
-    <header class="main-header">
-      <nav class="main-nav">
+    <header class="main-header" id="header-main">
+      <nav class="main-nav" id="nav-bar">
         <h1 class="nav-title tracking-in-expand">Dozar App</h1>
         <div class="nav-link-container">
-          <a href="#" class="nav-link">about us</a>
+          <a href="#header-main" class="nav-link">home</a>
+          <a href="#" class="nav-link">job seeker</a>
+          <a href="#" class="nav-link">job provider</a>
+          <a href="#" class="nav-link">screens</a>
           <a href="#" class="nav-link">contact</a>
         </div>
       </nav>
 
       <div class="header-content-container">
         <div class="header-content">
-          <h2 class="big-header-text tracking-in-expand">
+          <h2 class="big-header-text">
             a job in your
             <br />
             pocket
@@ -35,13 +39,11 @@
             With Dozar app we make it easier to find your suitable job, or hire
             suitable employee.
           </p>
-          <p class="download-text">
-            Download the app with the following links:
-          </p>
+          <p class="download-text">Download the app from:</p>
           <div class="btn-container">
             <div class="download-btn">
               <span class="icon-container">
-                <i class="fab fa-app-store-ios"></i>
+                <img src="./images/app-store.png" alt="" />
               </span>
               <div class="btn-text">
                 <p>download on the</p>
@@ -50,7 +52,7 @@
             </div>
             <div class="download-btn">
               <span class="icon-container">
-                <i class="fab fa-google-play"></i>
+                <img src="./images/google-play-store.png" alt="" srcset="" />
               </span>
               <div class="btn-text">
                 <p>download on the</p>
@@ -66,5 +68,147 @@
         </div>
       </div>
     </header>
+    <!-- Job provider section -->
+    <div class="container mx-auto pt-20 shadow-2xl">
+      <h1 class="mx-auto text-5xl text-yellow-600 w-max">Job Provider</h1>
+      <div class="w-1/12 mx-auto mt-2 mb-4 bg-yellow-600 h-1"></div>
+
+      <div class="grid grid-cols-3 gap-60">
+        <!-- first column section -->
+        <div class="flex flex-col justify-center">
+          <div class="mb-10">
+            <h2 class="text-black text-3xl mb-2 text-center">Posting Jobs</h2>
+            <p
+              class="
+                w-4/5
+                mx-auto
+                text-black
+                font-light
+                tracking-wide
+                leading-loose
+                text-center
+              "
+            >
+              our posting future makes job provider find their preferred
+              employee in minimal time
+            </p>
+          </div>
+
+          <div class="mt-10">
+            <h2 class="text-black text-3xl mb-2 text-center">
+              Provider Profile
+            </h2>
+            <p
+              class="
+                w-4/5
+                mx-auto
+                text-black
+                font-light
+                tracking-wide
+                leading-loose
+                text-center
+              "
+            >
+              for more information about job provider companies they have a
+              profile.
+            </p>
+          </div>
+        </div>
+
+        <!-- second column section -->
+        <div class="flex flex-col justify-center items-center">
+          <h2 class="text-black text-3xl mb-2 text-center">Accept/Reject</h2>
+          <p
+            class="
+              w-4/5
+              mx-auto
+              text-black
+              font-light
+              tracking-wide
+              leading-loose
+              text-center
+            "
+          >
+            View applyers profile , able to accept and reject them with a
+            feedback.
+          </p>
+        </div>
+
+        <!-- third column section -->
+        <div class="py-7 pr-4">
+          <img src="./images/jp-croped.jpg" alt="" srcset="" />
+        </div>
+      </div>
+    </div>
+
+    <!-- Job seeker section -->
+    <div class="container mx-auto pt-20 my-20 shadow-2xl">
+      <h1 class="mx-auto text-5xl text-yellow-600 w-max">Job Seeker</h1>
+      <div class="w-1/12 mx-auto mt-2 mb-4 bg-yellow-600 h-1"></div>
+
+      <div class="grid grid-cols-3 gap-60">
+        <!-- first column section -->
+        <div class="flex flex-col justify-center">
+          <div class="mb-10">
+            <h2 class="text-black text-3xl mb-2 text-center">Searching Jobs</h2>
+            <p
+              class="
+                w-4/5
+                mx-auto
+                text-black
+                font-light
+                tracking-wide
+                leading-loose
+                text-center
+              "
+            >
+              our searching feature makes make able for users to find what they
+              need in minimum time
+            </p>
+          </div>
+
+          <div class="mt-10">
+            <h2 class="text-black text-3xl mb-2 text-center">Save Jobs</h2>
+            <p
+              class="
+                w-4/5
+                mx-auto
+                text-black
+                font-light
+                tracking-wide
+                leading-loose
+                text-center
+              "
+            >
+              users can save jobs for later
+            </p>
+          </div>
+        </div>
+
+        <!-- second column section -->
+        <div class="flex flex-col justify-center items-center">
+          <h2 class="text-black text-3xl mb-2 text-center">Apply</h2>
+          <p
+            class="
+              w-4/5
+              mx-auto
+              text-black
+              font-light
+              tracking-wide
+              leading-loose
+              text-center
+            "
+          >
+            Job seekers can see jobs and apply for them.
+          </p>
+        </div>
+
+        <!-- third column section -->
+        <div class="py-7 pr-4">
+          <img src="./images/js-2-croped.jpg" alt="" srcset="" />
+        </div>
+      </div>
+    </div>
+    <script src="./scripts/script.js"></script>
   </body>
 </html>

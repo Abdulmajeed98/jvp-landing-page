@@ -1,0 +1,23 @@
+{
+  "name": "jvp-landing-page",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "build:css": "tailwind build src/tailwindsrc.css -o styles/tailwind.css"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Abdulmajeed98/jvp-landing-page.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Abdulmajeed98/jvp-landing-page/issues"
+  },
+  "homepage": "https://github.com/Abdulmajeed98/jvp-landing-page#readme",
+  "dependencies": {
+    "tailwindcss": "^2.1.2"
+  }
+}
