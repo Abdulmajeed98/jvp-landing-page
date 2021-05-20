@@ -68,6 +68,7 @@
       </div>
     </header>
 
+    <!-- Jop provider section -->
     <div class="container mx-auto pt-20 shadow-2xl">
       <h1 class="mx-auto text-5xl text-yellow-600 w-max">Job Provider</h1>
       <div class="w-1/12 mx-auto mt-2 mb-4 bg-yellow-600 h-1"></div>
@@ -207,6 +208,76 @@
           <img src="./images/js-2-croped.jpg" alt="" srcset="" />
         </div>
       </div>
+    </div>
+
+    <!-- contact us  -->
+    <div class="container mx-auto pt-20 my-20 shadow-2xl">
+      <h1 class="mx-auto text-5xl text-yellow-600 w-max">Contact Us</h1>
+      <div class="w-1/12 mx-auto mt-2 mb-4 bg-yellow-600 h-1"></div>
+      <form class="w-full flex flex-col px-10 pt-10 pb-4">
+        <!-- full name section -->
+        <div class="flex justify-around">
+          <span class="flex flex-col w-5/12">
+            <label for="first-name" class="text-yellow-600 mb-2"
+              >First Name</label
+            >
+            <input
+              type="text"
+              id="first-name"
+              name="first-name"
+              class="shadow-lg text-black h-14 py-5"
+            />
+          </span>
+          <span class="flex flex-col w-5/12">
+            <label for="first-name" class="text-yellow-600 mb-2"
+              >First Name</label
+            >
+            <input
+              type="text"
+              id="first-name"
+              name="first-name"
+              class="shadow-lg text-black h-14 py-5"
+            />
+          </span>
+        </div>
+        <!-- subject section -->
+        <div class="mt-5 w-full mx-16">
+          <label for="subject" class="text-yellow-600">Subject</label>
+          <br />
+          <input
+            type="text"
+            id="subject"
+            name="subject"
+            class="shadow-lg text-black h-14 py-5 w-11/12"
+          />
+        </div>
+        <!-- message section -->
+        <div class="mt-5 w-full mx-16">
+          <label for="message" class="text-yellow-600">Message</label>
+          <br />
+          <textarea
+            name="message"
+            id="message"
+            rows="30"
+            class="shadow-lg text-black h-52 p-1 w-11/12"
+          ></textarea>
+        </div>
+
+        <div class="w-full flex justify-center mt-7">
+          <button
+            class="bg-gray-200 text-yellow-600 mx-2 px-3 py-4 btn rounded-lg"
+          >
+            Fill Empty
+          </button>
+          <button class="bg-yellow-600 mx-2 px-3 py-4 btn rounded-lg">
+            Send Message
+            <span
+              class="inline-flex h-full w-5 justify-center items-center ml-2"
+              ><img src="./images/Icon-send@2x.png" alt="" srcset=""
+            /></span>
+          </button>
+        </div>
+      </form>
     </div>
   </body>
 </html>
