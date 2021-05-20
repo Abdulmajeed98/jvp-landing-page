@@ -38,6 +38,14 @@
   }
 }
 /* ======================================================================= */
+@-webkit-keyframes bounce {
+  0% {
+    transform: translateY(0);
+  }
+  100% {
+    transform: translateY(-5%);
+  }
+}
 @keyframes bounce {
   0% {
     transform: translateY(0);
@@ -206,14 +214,51 @@ body {
 
 /* bounce animation class */
 .bounce {
+  -webkit-animation: bounce 0.8s;
   animation: bounce 0.8s;
+  -webkit-animation-delay: 0.8s;
   animation-delay: 0.8s;
+  -webkit-animation-direction: alternate;
   animation-direction: alternate;
+  -webkit-animation-iteration-count: infinite;
   animation-iteration-count: infinite;
 }
 
 /* ============== contact us section ================*/
 .btn:hover {
   transition: all 300ms;
-  box-shadow: 0 3px 7px 3px rgba(0, 0, 0, 0.2);
+  box-shadow: 0 3px 7px 3px rgba(0, 0, 0, 0.4);
+  background-color: #b44e29;
+  color: #fff;
+}
+
+/* ====================== footer section ===================== */
+@-webkit-keyframes spin {
+  from {
+    transform: rotate(0deg);
+  }
+
+  to {
+    transform: rotate(360deg);
+  }
+}
+@keyframes spin {
+  from {
+    transform: rotate(0deg);
+  }
+
+  to {
+    transform: rotate(360deg);
+  }
+}
+.social-link:hover {
+  transition: all 300ms;
+  color: rgb(201, 201, 201);
+  cursor: pointer;
+  -webkit-animation: spin 2s;
+  animation: spin 2s;
+  -webkit-animation-timing-function: linear;
+  animation-timing-function: linear;
+  -webkit-animation-iteration-count: infinite;
+  animation-iteration-count: infinite;
 }
